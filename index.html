@@ -192,6 +192,62 @@
                 </div>
             </div>
         </section>
+        <section id="carteras" class="section-bg">
+            <div class="container">
+                <div class="subtitle"><h3>Carteras Autorizadas<h3>
+                    <h2>Registro de Inversion Blockchain</h2>
+                        <!-- CDN de Font Awesome (solo si no lo tienes ya incluido) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Contenedor de los botones -->
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+  <!-- Botón BTC -->
+  <button onclick="copiarAlPortapapeles('bc1qzuh8f7qzsk6guj0zdnw7urxfmmave5d37kz0m5')" 
+          style="display: flex; align-items: center; padding: 1em 1.5em; border: none; border-radius: 12px; font-size: 1rem; cursor: pointer; color: white; background-color: #f7931a; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-width: 300px;">
+    <i class="fab fa-btc" style="font-size: 1.5rem; margin-right: 1em;"></i>
+    <div>
+      <strong>Red BTC</strong><br>
+      <span style="font-size: 0.9rem; word-break: break-all;">bc1qzuh8f7qzsk6guj0zdnw7urxfmmave5d37kz0m5</span>
+    </div>
+  </button>
+
+  <!-- Botón Ethereum -->
+  <button onclick="copiarAlPortapapeles('0x304Ce06eef5c4c3a3d9Cc40A86984f8783228e49')" 
+          style="display: flex; align-items: center; padding: 1em 1.5em; border: none; border-radius: 12px; font-size: 1rem; cursor: pointer; color: white; background-color: #3c3c3d; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-width: 300px;">
+    <i class="fab fa-ethereum" style="font-size: 1.5rem; margin-right: 1em;"></i>
+    <div>
+      <strong>Red Ethereum</strong><br>
+      <span style="font-size: 0.9rem; word-break: break-all;">0x304Ce06eef5c4c3a3d9Cc40A86984f8783228e49</span>
+    </div>
+  </button>
+
+  <!-- Botón BNB -->
+  <button onclick="copiarAlPortapapeles('0xEfe512efF33079096C52414f2a6BBd55EB30a15b')" 
+          style="display: flex; align-items: center; padding: 1em 1.5em; border: none; border-radius: 12px; font-size: 1rem; cursor: pointer; color: white; background-color: #f3ba2f; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-width: 300px;">
+    <i class="fa-solid fa-coins" style="font-size: 1.5rem; margin-right: 1em;"></i>
+    <div>
+      <strong>Red BNB</strong><br>
+      <span style="font-size: 0.9rem; word-break: break-all;">0xEfe512efF33079096C52414f2a6BBd55EB30a15b</span>
+    </div>
+  </button>
+
+</div>
+
+<!-- Script para copiar al portapapeles -->
+<script>
+  function copiarAlPortapapeles(texto) {
+    navigator.clipboard.writeText(texto)
+      .then(() => alert('Dirección copiada: ' + texto))
+      .catch(err => alert('Error al copiar: ' + err));
+  }
+</script>
+
+
+                        
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <a href="index.html" class="logo">TOKEN REPO</a>

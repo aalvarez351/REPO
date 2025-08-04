@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Lanzamiento - Proyecto REPO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1A237E; --secondary-color: #5C6BC0; --accent-color: #F9A825;
+            --dark-grey: #263238; --medium-grey: #546E7A; --light-grey: #ECEFF1; --white-color: #FFFFFF;
+        }
+        body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; background-color: var(--white-color); color: var(--medium-grey); font-size: 17px; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-color); font-weight: 700; }
+        .container { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+        nav { background: var(--white-color); padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav .logo { font-family: 'Montserrat'; font-weight: 800; color: var(--primary-color); text-decoration: none; font-size: 1.5rem; }
+        nav .nav-links a { color: var(--medium-grey); text-decoration: none; margin-left: 1.5rem; font-weight: 700; transition: color 0.3s; }
+        nav .nav-links a:hover { color: var(--accent-color); }
+        footer { background-color: var(--dark-grey); color: var(--light-grey); text-align: center; padding: 3rem 2rem; margin-top: 4rem;}
+        h1 { font-size: 2.8rem; margin-bottom: 2rem; border-bottom: 3px solid var(--accent-color); padding-bottom: 1rem; }
+        h2 { font-size: 2rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--secondary-color); margin-top: 2rem; }
+        ul { list-style-position: inside; padding-left: 1rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">PROYECTO REPO</a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="whitepaper.html">Whitepaper</a>
+            <a href="estrategia.html">Estrategia</a>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Estrategia de Lanzamiento y Captación de Fondos</h1>
+        <p>Versión 1.0</p>
+        
+        <h2>1. Público Objetivo</h2>
+        <p>Nuestro público se divide en tres categorías principales:</p>
+        <ul>
+            <li><strong>Inversores de Impacto:</strong> Individuos y fondos que buscan no solo un retorno financiero, sino también un impacto social y ambiental medible.</li>
+            <li><strong>Inversores Cripto/Web3:</strong> Participantes nativos del ecosistema que entienden los modelos de tokenización (RWA), DAOs y buscan proyectos sólidos con respaldo en activos reales.</li>
+            <li><strong>Pequeños y Medianos Inversores Inmobiliarios:</strong> Personas interesadas en el mercado inmobiliario pero que han sido excluidas por las altas barreras de entrada.</li>
+        </ul>
+
+        <h2>2. Fases de Captación de Fondos</h2>
+        <h3>Fase 1: Ronda Pre-Semilla (Completada)</h3>
+        <p><strong>Objetivo:</strong> Financiar el desarrollo técnico inicial, los costos legales de estructuración y la elaboración del whitepaper.</p>
+        <h3>Fase 2: Ronda Semilla / Inversores Privados (Próxima Fase)</h3>
+        <p><strong>Objetivo:</strong> Recaudar capital para la estructuración legal completa, auditorías y la adquisición de las primeras 1-3 propiedades piloto. Se ofrecerá un descuento y se requerirá un acuerdo de bloqueo (vesting).</p>
+        <h3>Fase 3: Oferta Inicial de Tokens (IDO) / Venta Pública</h3>
+        <p><strong>Objetivo:</strong> Capitalizar el fondo a gran escala. Se realizará en un Launchpad de confianza una vez obtenidas las licencias regulatorias, con KYC/AML para todos los participantes.</p>
+        
+        <h2>3. Estrategia de Marketing y Comunicación</h2>
+        <p>El mensaje central es: <strong>"Invierte en metros cuadrados de impacto. REPO es más que un token, es un ladrillo en la construcción de un futuro sostenible."</strong></p>
+        <ul>
+            <li><strong>Canales:</strong> Twitter/X, Medium, Telegram/Discord, y la página web oficial.</li>
+            <li><strong>Acciones Clave:</strong> Publicación del Whitepaper, sesiones AMA (Ask Me Anything) con el equipo, y alianzas estratégicas con comunidades Web3, fondos de impacto y empresas del sector inmobiliario.</li>
+        </ul>
+
+        <h2>4. Uso de los Fondos</h2>
+        <p>La transparencia es fundamental. El capital recaudado en la Ronda Semilla y la Venta Pública se distribuirá de la siguiente manera:</p>
+        <ul>
+            <li><strong>85% - Fondo de Adquisición y Desarrollo:</strong> Para la compra y revalorización de las propiedades inmobiliarias.</li>
+            <li><strong>10% - Operaciones y Legal:</strong> Costos operativos, salarios, y gastos legales continuos.</li>
+            <li><strong>5% - Liquidez y Marketing:</strong> Para proveer liquidez inicial al token y para campañas de marketing.</li>
+        </ul>
+        <p>Todos los movimientos de fondos serán gestionados a través de una tesorería multisig y, a futuro, a través de un `pallet-treasury` gobernado por la DAO.</p>
+    </main>
+    <footer><p>© 2023 Proyecto REPO. Todos los derechos reservados.</p></footer>
+</body>
+</html>
